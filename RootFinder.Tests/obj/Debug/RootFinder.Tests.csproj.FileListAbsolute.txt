@@ -1,0 +1,12 @@
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\obj\Debug\RootFinder.Tests.csprojResolveAssemblyReference.cache
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\obj\Debug\RootFinder.Tests.csproj.CoreCompileInputs.cache
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\bin\Debug\RootFinder.Tests.dll
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\bin\Debug\RootFinder.Tests.pdb
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\bin\Debug\nunit.framework.dll
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\bin\Debug\RootFinder.dll
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\bin\Debug\nunit.framework.pdb
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\bin\Debug\nunit.framework.xml
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\bin\Debug\RootFinder.pdb
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\obj\Debug\RootFinder.Tests.csproj.CopyComplete
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\obj\Debug\RootFinder.Tests.dll
+D:\EPAM\NET.S.2018.Struk.03\RootFinder.Tests\obj\Debug\RootFinder.Tests.pdb
