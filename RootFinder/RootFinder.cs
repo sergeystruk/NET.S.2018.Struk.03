@@ -2,8 +2,26 @@
 
 namespace RootFinder
 {
+    /// <summary>
+    /// Static class provides one static method to find the n-th root of a number
+    /// </summary>
     public static class RootFinder
     {
+        /// <summary>
+        /// This method finds the n-th root of a number
+        /// </summary>
+        /// <param name="A">
+        /// Number
+        /// </param>
+        /// <param name="n">
+        /// Degree of root
+        /// </param>
+        /// <param name="eps">
+        /// The accuracy of computations
+        /// </param>
+        /// <returns>
+        /// N-th root of Number
+        /// </returns>
         public static double FindNthRoot(double A, int n, double eps)
         {
             if (eps < 0 || eps > 1)

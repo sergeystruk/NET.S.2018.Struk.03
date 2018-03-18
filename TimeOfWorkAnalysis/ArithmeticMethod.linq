@@ -13,7 +13,21 @@ void Main()
 	time.Dump();
 }
 
-
+///<summary>
+///Arythmetic method of filtering digits
+///</summary>
+///<param name="array">
+///Array to sort
+///</param>
+///<param name="digit">
+///Filter of sorting
+///</param>
+///<param name="time">
+///Time which is needed for computations
+///</param>
+///<returns>
+///Filtered array
+///</returns>
 public int[] FilterDigit(int[] array, int digit, out long time)
 {
 	int subElem;

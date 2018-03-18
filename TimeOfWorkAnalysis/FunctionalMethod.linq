@@ -13,6 +13,21 @@ void Main()
 	time.Dump();
 }
 
+///<summary>
+///Functional method of filtering digits
+///</summary>
+///<param name="array">
+///Array to sort
+///</param>
+///<param name="digit">
+///Filter of sorting
+///</param>
+///<param name="time">
+///Time which is needed for computations
+///</param>
+///<returns>
+///Filtered array
+///</returns>
 public static int[] FilterDigits(int[] array, int number, out long time)
 {
     if (array == null)
