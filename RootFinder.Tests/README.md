@@ -1,16 +1,27 @@
-Реализовать алгоритм FindNthRoot, позволяющий вычислять корень n-ой степени ( n?N ) из вещественного числа а методом Ньютона с заданной точностью. Разработать модульные тесты (NUnit и (или) MS Unit Test) для тестирования метода. Примерные тест кейсы:
+Р РµР°Р»РёР·РѕРІР°С‚СЊ Р°Р»РіРѕСЂРёС‚Рј FindNthRoot, РїРѕР·РІРѕР»СЏСЋС‰РёР№ РІС‹С‡РёСЃР»СЏС‚СЊ РєРѕСЂРµРЅСЊ n-РѕР№ СЃС‚РµРїРµРЅРё ( nв€€N ) РёР· РІРµС‰РµСЃС‚РІРµРЅРЅРѕРіРѕ С‡РёСЃР»Р° Р° РјРµС‚РѕРґРѕРј РќСЊСЋС‚РѕРЅР° СЃ Р·Р°РґР°РЅРЅРѕР№ С‚РѕС‡РЅРѕСЃС‚СЊСЋ. Р Р°Р·СЂР°Р±РѕС‚Р°С‚СЊ РјРѕРґСѓР»СЊРЅС‹Рµ С‚РµСЃС‚С‹ (NUnit Рё (РёР»Рё) MS Unit Test) РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ РјРµС‚РѕРґР°. РџСЂРёРјРµСЂРЅС‹Рµ С‚РµСЃС‚ РєРµР№СЃС‹:
 
 [TestCase(1, 5, 0.0001,ExpectedResult =1)]
+
 [TestCase(8, 3, 0.0001,ExpectedResult = 2)]
+
 [TestCase(0.001, 3, 0.0001,ExpectedResult = 0.1)]
+
 [TestCase(0.04100625,4 , 0.0001, ExpectedResult =0.45)]
+
 [TestCase(8, 3, 0.0001, ExpectedResult =2)]
+
 [TestCase(0.0279936, 7, 0.0001, ExpectedResult =0.6)]
+
 [TestCase(0.0081, 4, 0.1, ExpectedResult =0.3)]
+
 [TestCase(-0.008, 3, 0.1, ExpectedResult =-0.2)]
+
 [TestCase(0.004241979, 9, 0.00000001, ExpectedResult =0.545)]
+
 [TestCase(8, 15, -7, -5)] <- ArgumentOutOfRangeException
+
 [TestCase(8, 15, -0.6, -0.1)] <- ArgumentOutOfRangeException
-Рекомендованный шаблон для тестового метода проверки исключений.
+
+Р РµРєРѕРјРµРЅРґРѕРІР°РЅРЅС‹Р№ С€Р°Р±Р»РѕРЅ РґР»СЏ С‚РµСЃС‚РѕРІРѕРіРѕ РјРµС‚РѕРґР° РїСЂРѕРІРµСЂРєРё РёСЃРєР»СЋС‡РµРЅРёР№.
 
 MethodName_Number_Degree_Precision_ArgumentOutOfRangeException(double number, int degree, double precision, double expected) => Assert.Throws(() => ClassName.MethodName(number, degree, precision));

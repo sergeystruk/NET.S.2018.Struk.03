@@ -12,7 +12,6 @@ void Main()
 	FilterDigits(arr, 5, out time);
 	time.Dump();
 }
-
 ///<summary>
 ///Functional method of filtering digits
 ///</summary>
