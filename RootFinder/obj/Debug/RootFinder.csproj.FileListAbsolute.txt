@@ -3,3 +3,4 @@ D:\EPAM\NET.S.2018.Struk.03\RootFinder\bin\Debug\RootFinder.pdb
 D:\EPAM\NET.S.2018.Struk.03\RootFinder\obj\Debug\RootFinder.csproj.CoreCompileInputs.cache
 D:\EPAM\NET.S.2018.Struk.03\RootFinder\obj\Debug\RootFinder.dll
 D:\EPAM\NET.S.2018.Struk.03\RootFinder\obj\Debug\RootFinder.pdb
+D:\EPAM\NET.S.2018.Struk.03\RootFinder\obj\Debug\RootFinder.csprojResolveAssemblyReference.cache

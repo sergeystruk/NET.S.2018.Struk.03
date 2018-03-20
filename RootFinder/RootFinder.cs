@@ -16,36 +16,40 @@ namespace RootFinder
         /// <param name="n">
         /// Degree of root
         /// </param>
-        /// <param name="eps">
+        /// <param name="precision">
         /// The accuracy of computations
         /// </param>
         /// <returns>
         /// N-th root of Number
         /// </returns>
-        public static double FindNthRoot(double A, int n, double eps)
+        public static double FindNthRoot(double number, int degree, double precision)
         {
-            if (eps < 0 || eps > 1)
+            if (degree == 1)
             {
-                throw new ArgumentOutOfRangeException(nameof(eps));
+                return number;
+            }
+            if (precision < 0 || precision > 1)
+            {
+                throw new ArgumentOutOfRangeException(nameof(precision));
             }
 
-            if (A < 0)
+            if (number < 0 && degree % 2 == 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(A));
+                throw new ArgumentOutOfRangeException(nameof(number));
             }
 
-            if (n <= 0)
+            if (degree <= 0)
             {
-                throw new ArgumentOutOfRangeException(nameof(n));
+                throw new ArgumentOutOfRangeException(nameof(degree));
             }
 
-            double currentApproximation = A / n;
-            double nextApproximation = (1 / (double)n) * ((n - 1) * currentApproximation + A / Math.Pow(currentApproximation, n - 1));
+            double currentApproximation = number / degree;
+            double nextApproximation = (1.0 / degree) * ((degree - 1) * currentApproximation + number / Math.Pow(currentApproximation, degree - 1));
 
-            while (Math.Abs(nextApproximation - currentApproximation) > eps)
+            while (Math.Abs(nextApproximation - currentApproximation) > precision)
             {
                 currentApproximation = nextApproximation;
-                nextApproximation = (1 / (double)n) * ((n - 1) * currentApproximation + A / Math.Pow(currentApproximation, n - 1));
+                nextApproximation = (1.0 / degree) * ((degree - 1) * currentApproximation + number / Math.Pow(currentApproximation, degree - 1));
             }
             
             return nextApproximation;
